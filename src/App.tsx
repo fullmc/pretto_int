@@ -9,6 +9,7 @@ import coins from './assets/coins.svg'
 import chevron from './assets/ChevronRightBold.svg'
 import hero from './assets/Image1.svg'
 import check from './assets/CheckBoldMini.svg'
+import model from './assets/Img.svg'
 
 
 function App() {
@@ -84,6 +85,8 @@ function App() {
               <p>Destinée au vendeur, elle détaille de façon transparente votre projet de financement.</p>
             </div>
           </div>
+          <button className="attestation-button">Obtenir mon attestation</button>
+          <img src={model} alt="Model" />
         </div>
       </section>
     </>

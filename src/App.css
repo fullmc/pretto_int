@@ -92,6 +92,8 @@ section {
       border-radius: 8px;
       padding: 16px 24px;
       font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
     }
 
     button > div {
@@ -137,6 +139,20 @@ section {
           letter-spacing: 0.32px;
         }
       }
+    }
+
+    .attestation-button {
+      margin-top: 24px;
+      margin-bottom: 28px;
+      background-color: rgba(5, 5, 5, 1);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 20px 24px 20px 24px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      cursor: pointer;
     }
   }
 
