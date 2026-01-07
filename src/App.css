@@ -10,14 +10,44 @@
   font-weight: 600;
 }
 
-.app-header {
+header {
+  position: relative;
+}
+
+nav {
+  height: 72px;
   display: flex;
-  padding: 16px 15px 11px 33px;
+  align-items: center;
+  padding: 0 20px;
+  background: white;
+  border-bottom: 1px solid rgba(201, 207, 213);
+  position: sticky;
+  top: 44px;
+  z-index: 9;
+  justify-content: space-between;
+
+    .menu {
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      height: 100%;
+      border-left: 1px solid rgba(201, 207, 213);
+    }
+}
+
+.status-bar {
+  position: sticky;
+  top: 0;
+  height: 44px;
+  padding: 0 15px 0 33px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  background: white;
+  z-index: 10;
+}
 
-    .status-icons{
-      display: flex;
-      gap: 5px;
-    }
+.status-icons {
+  display: flex;
+  gap: 4px;
 }
