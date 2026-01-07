@@ -9,7 +9,7 @@ import coins from './assets/coins.svg'
 import chevron from './assets/ChevronRightBold.svg'
 import hero from './assets/Image1.svg'
 import check from './assets/CheckBoldMini.svg'
-import model from './assets/Img.svg'
+import finance from './assets/paper.svg'
 
 
 function App() {
@@ -62,10 +62,11 @@ function App() {
         </section>
 
         <section>
+          <h1>Votre attestation de financement</h1>
           <div className="finance">
-            <h1>Votre attestation de financement</h1>
-            <p>Les biens de qualité reçoivent beaucoup d’offres. L’attestation de financement Pretto certifie au vendeur de votre capacité d’achat. De quoi le rassurer et mettre toutes les chances de votre côté.</p>
             <div className="info-boxes">
+            <p>Les biens de qualité reçoivent beaucoup d’offres. L’attestation de financement Pretto certifie au vendeur de votre capacité d’achat. De quoi le rassurer et mettre toutes les chances de votre côté.</p>
+            <div className="boxes">
               <div className="info-box">
                 <div>
                   <img src={check} alt="" />
@@ -89,7 +90,8 @@ function App() {
               </div>
             </div>
             <button className="attestation-button">Obtenir mon attestation</button>
-            <img src={model} alt="Model" className="model-image"/> 
+            </div>
+          <img src={finance} alt="Model" className="model-image"/> 
           </div>
         </section>
       </main>
