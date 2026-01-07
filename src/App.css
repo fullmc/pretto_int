@@ -74,7 +74,6 @@ section {
   }
 
   p {
-    font-size: 16px;
     margin: 0;
     line-height: 24px;
     font-weight: 400px;
@@ -92,11 +91,53 @@ section {
       border: 1px solid rgba(211, 211, 211, 1);
       border-radius: 8px;
       padding: 16px 24px;
+      font-weight: 600;
     }
 
     button > div {
       display: flex;
       align-items: center;
+      gap: 8px;
     }
   }
+
+  .finance {
+    display: flex;
+    flex-direction: column;
+
+    > p {
+      padding-bottom: 16px;
+      padding-top: 8px;
+    }
+
+    .info-boxes {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .info-box {
+        background-color: rgba(245, 245, 245, 1);
+        border-radius: 8px;
+        padding: 16px;
+        font-weight: 400;
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+
+        > div {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          font-weight: 600;
+        }
+
+        > p {
+          font-size: 12px;
+          line-height: 16px; 
+          letter-spacing: 0.32px;
+        }
+      }
+    }
+  }
+
 }

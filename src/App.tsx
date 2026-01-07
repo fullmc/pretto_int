@@ -8,6 +8,7 @@ import calculator from './assets/calculator.svg'
 import coins from './assets/coins.svg'
 import chevron from './assets/ChevronRightBold.svg'
 import hero from './assets/Image1.svg'
+import check from './assets/CheckBoldMini.svg'
 
 
 function App() {
@@ -54,6 +55,36 @@ function App() {
           </div>
         </div>
         <img src={hero} alt="Hero" />
+      </section>
+
+      <section>
+        <div className="finance">
+          <h1>Votre attestation de financement</h1>
+          <p>Les biens de qualité reçoivent beaucoup d’offres. L’attestation de financement Pretto certifie au vendeur de votre capacité d’achat. De quoi le rassurer et mettre toutes les chances de votre côté.</p>
+          <div className="info-boxes">
+            <div className="info-box">
+              <div>
+                <img src={check} alt="" />
+                <p>Gratuite</p>
+              </div>
+              <p>Elle est incluse dans notre pack d’outils et services gratuits, et sans engagement !</p>
+            </div>
+            <div className="info-box">
+              <div>
+                <img src={check} alt="" />
+                <p>Rapide</p>
+              </div>
+              <p>Recevez votre attestation en 24h, après dépôt de vos justificatifs et échange avec votre courtier.</p>
+            </div>
+            <div className="info-box">
+              <div>
+                <img src={check} alt="" />
+                <p>Rassurante</p>
+              </div>
+              <p>Destinée au vendeur, elle détaille de façon transparente votre projet de financement.</p>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   )
