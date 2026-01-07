@@ -16,6 +16,6 @@ p {
   padding: 0;
 }
 
-button {
+button, .nav-item, .chevron-down, .logo {
   cursor: pointer;
 }

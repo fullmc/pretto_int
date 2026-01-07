@@ -32,7 +32,7 @@ function App() {
         </div>
 
         <nav>
-          <img src={logo} alt="Pretto Logo" />
+          <img src={logo} alt="Pretto Logo" className="logo"/>
           <div className="nav-items">
             <div className="nav-item">
               <img src={home} alt="Home" />
@@ -50,7 +50,7 @@ function App() {
               <div className="profile-info">
                 <img src={profile} alt="Profile"/>
                 <p>prelead@pretto.fr</p>
-                <img src={chevronDown} alt="" />
+                <img src={chevronDown} alt="chevron down" className="chevron-down"/>
               </div>
             </div>
           </div>
