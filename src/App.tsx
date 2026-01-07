@@ -34,61 +34,65 @@ function App() {
         </nav>
       </header>
       
-      <section>
-        <div className="prepare-project">
+      <main>
+        <section>
           <h1>Préparez votre projet en toute facilité</h1>
-          <p>Vous aimeriez savoir quel crédit vous pourriez obtenir pour votre projet ? Nos simulateurs sont connectés à un algorithme unique sur le marché nous permettant de connaître avec précision les offres des banques et d’identifier la meilleure pour vous.</p>
-          <div className="buttons">
-            <button>
-              <div>
-                <img src={calculator} alt="Calculator" />
-                <p>Simuler mon prêt</p>
+          <div className="prepare-project">
+            <div>
+              <p>Vous aimeriez savoir quel crédit vous pourriez obtenir pour votre projet ? Nos simulateurs sont connectés à un algorithme unique sur le marché nous permettant de connaître avec précision les offres des banques et d’identifier la meilleure pour vous.</p>
+              <div className="buttons">
+                <button>
+                  <div>
+                    <img src={calculator} alt="Calculator" />
+                    <p>Simuler mon prêt</p>
+                  </div>
+                  <img src={chevron} alt="Chevron right" />
+                </button>
+                <button>
+                  <div>
+                    <img src={coins} alt="Coins" />
+                    <p>Simuler mon rachat</p>
+                  </div>
+                  <img src={chevron} alt="Chevron right" />
+                </button>
               </div>
-              <img src={chevron} alt="Chevron right" />
-            </button>
-            <button>
-              <div>
-                <img src={coins} alt="Coins" />
-                <p>Simuler mon rachat</p>
-              </div>
-              <img src={chevron} alt="Chevron right" />
-            </button>
+            </div>
+            <img src={hero} alt="Hero" className="hero-image"/>
           </div>
-        </div>
-        <img src={hero} alt="Hero" />
-      </section>
+        </section>
 
-      <section>
-        <div className="finance">
-          <h1>Votre attestation de financement</h1>
-          <p>Les biens de qualité reçoivent beaucoup d’offres. L’attestation de financement Pretto certifie au vendeur de votre capacité d’achat. De quoi le rassurer et mettre toutes les chances de votre côté.</p>
-          <div className="info-boxes">
-            <div className="info-box">
-              <div>
-                <img src={check} alt="" />
-                <p>Gratuite</p>
+        <section>
+          <div className="finance">
+            <h1>Votre attestation de financement</h1>
+            <p>Les biens de qualité reçoivent beaucoup d’offres. L’attestation de financement Pretto certifie au vendeur de votre capacité d’achat. De quoi le rassurer et mettre toutes les chances de votre côté.</p>
+            <div className="info-boxes">
+              <div className="info-box">
+                <div>
+                  <img src={check} alt="" />
+                  <p>Gratuite</p>
+                </div>
+                <p>Elle est incluse dans notre pack d’outils et services gratuits, et sans engagement !</p>
               </div>
-              <p>Elle est incluse dans notre pack d’outils et services gratuits, et sans engagement !</p>
-            </div>
-            <div className="info-box">
-              <div>
-                <img src={check} alt="" />
-                <p>Rapide</p>
+              <div className="info-box">
+                <div>
+                  <img src={check} alt="" />
+                  <p>Rapide</p>
+                </div>
+                <p>Recevez votre attestation en 24h, après dépôt de vos justificatifs et échange avec votre courtier.</p>
               </div>
-              <p>Recevez votre attestation en 24h, après dépôt de vos justificatifs et échange avec votre courtier.</p>
-            </div>
-            <div className="info-box">
-              <div>
-                <img src={check} alt="" />
-                <p>Rassurante</p>
+              <div className="info-box">
+                <div>
+                  <img src={check} alt="" />
+                  <p>Rassurante</p>
+                </div>
+                <p>Destinée au vendeur, elle détaille de façon transparente votre projet de financement.</p>
               </div>
-              <p>Destinée au vendeur, elle détaille de façon transparente votre projet de financement.</p>
             </div>
+            <button className="attestation-button">Obtenir mon attestation</button>
+            <img src={model} alt="Model" className="model-image"/> 
           </div>
-          <button className="attestation-button">Obtenir mon attestation</button>
-          <img src={model} alt="Model" />
-        </div>
-      </section>
+        </section>
+      </main>
     </>
   )
 }
