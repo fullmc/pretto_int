@@ -10,6 +10,11 @@ import chevron from './assets/ChevronRightBold.svg'
 import hero from './assets/Image1.svg'
 import check from './assets/CheckBoldMini.svg'
 import finance from './assets/paper.svg'
+import home from './assets/House.svg'
+import tune from './assets/Tune.svg'
+import question from './assets/QuestionMarkCircle.svg'
+import profile from './assets/Avatar.svg'
+import chevronDown from './assets/ChevronDownBold.svg'
 
 
 function App() {
@@ -28,8 +33,26 @@ function App() {
 
         <nav>
           <img src={logo} alt="Pretto Logo" />
-          <div className="menu">
-            <img src={menu} alt="Menu" />
+          <div className="nav-items">
+            <div className="nav-item">
+              <img src={home} alt="Home" />
+              <a>Tableau de bord</a>
+            </div>
+            <div className="nav-item">
+              <img src={tune} alt="Home" />
+              <a>Simulation</a>
+            </div>
+            <div className="nav-item">
+              <img src={question} alt="Home" />
+            </div>
+            <div className="menu">
+              <img src={menu} alt="Menu" className="menu-icon" />
+              <div className="profile-info">
+                <img src={profile} alt="Profile"/>
+                <p>prelead@pretto.fr</p>
+                <img src={chevronDown} alt="" />
+              </div>
+            </div>
           </div>
         </nav>
       </header>

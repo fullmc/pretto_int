@@ -25,13 +25,21 @@ nav {
   border-bottom: 1px solid rgba(201, 207, 213);
   justify-content: space-between;
 
-    .menu {
-      display: flex;
-      align-items: center;
-      padding-left: 20px;
-      height: 100%;
-      border-left: 1px solid rgba(201, 207, 213);
-    }
+  .nav-items {
+    display: flex;
+    height: 100%;
+  }
+
+  .nav-item, .profile-info {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 100%;
+    border-left: 1px solid rgba(201, 207, 213);
+  }
 }
 
 .status-bar {
@@ -229,6 +237,44 @@ section {
 }
 
 @media (min-width: 1024px) {
+
+  .status-bar {
+    display: none;
+  }
+
+  nav {
+    .menu-icon {
+      display: none;
+    }
+
+    .nav-items {
+      display: flex;
+      gap: 32px;
+      height: 100%;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      justify-content: center;
+      font-weight: 350;
+    }
+
+    .nav-item a {
+      border-bottom: 1px solid black;
+      background: none;
+      border: none;
+    }
+
+    .profile-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 350;
+    }
+  }
+
   section {
     .finance {
       display: flex;
