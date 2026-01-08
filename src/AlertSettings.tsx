@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import './AlertSettings.css'
+import Checkbox from "./components/Checkbox";
 
 function AlertSettings() {
   return (
@@ -15,6 +16,14 @@ function AlertSettings() {
             </div>
             <div className="form-section">
               <h5>Type de bien</h5>
+              <Checkbox
+                id="appartement"
+                label="Appartement"
+              />
+              <Checkbox
+                id="maison"
+                label="Maison"
+              />
             </div>
             <div className="form-section">
               <h5>Type de vente</h5>
