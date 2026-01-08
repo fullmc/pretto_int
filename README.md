@@ -38,6 +38,8 @@ Création d'une page de paramétrage d'alertes avec :
 - Filtres par type de bien (checkboxes)
 - Filtres par type de vente (radio buttons)
 
+**Accès :** sur `http://localhost:5173/alert-settings` ou via la navbar (clic sur le dropdown à côté de l'email ou menu burger → "Paramétrer mes alertes")
+
 ## Choix techniques
 
 ### Sélection des villes
