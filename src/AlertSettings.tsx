@@ -12,7 +12,7 @@ function AlertSettings() {
       { label: 'Lyon', postcode: '69007' }
     ])
   const [propertyType, setPropertyType] = useState({
-    flat: true,
+    flat: false,
     house: false
   })
   const [saleType, setSaleType] = useState<'new' | 'old' | undefined>(undefined)
@@ -34,6 +34,7 @@ function AlertSettings() {
   return (
     <>
       <Header />
+      
       <main className="alert-page">
         <section className="alert-form">
           <h1>Paramétrez votre alerte</h1>
@@ -41,12 +42,13 @@ function AlertSettings() {
           <div className="form-content">
             <div className="form-section">
               <h5>Localisation</h5>
-            <CitySelector
-              cities={cities}
-              onAddCity={handleAddCity}
-              onRemoveCity={handleRemoveCity}
-            />
+              <CitySelector
+                cities={cities}
+                onAddCity={handleAddCity}
+                onRemoveCity={handleRemoveCity}
+              />
             </div>
+
             <div className="form-section">
               <h5>Type de bien</h5>
               <Checkbox
@@ -62,6 +64,7 @@ function AlertSettings() {
                 onChange={(e) => setPropertyType({ ...propertyType, house: e.target.checked })}
               />
             </div>
+
             <div className="form-section">
               <h5>Type de vente</h5>
               <Radio
@@ -82,14 +85,17 @@ function AlertSettings() {
               />
             </div>
           </div>
+
           <div className="form-buttons"> 
             <button className="save-btn" onClick={() => {handleUpdateAlert(); alert('Alerte enregistrée !')}}>
               Enregistrer
             </button>
+            
             <button className="delete-btn" onClick={() => {handleUpdateAlert(); alert('Alerte supprimée !')}}>
               Supprimer l'alerte
             </button>
           </div>
+
         </section>
       </main>
     </>

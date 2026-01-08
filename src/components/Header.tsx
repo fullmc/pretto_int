@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import '../components/Header.tsx'
+import './Header.css'
+import '../App.css'
 import logo from '../assets/Logo_dark.svg'
 import menu from '../assets/Bars.svg'
 import home from '../assets/House.svg'
@@ -30,18 +32,22 @@ function Header() {
         <Link to="/">
           <img src={logo} alt="Pretto Logo" className="logo"/>
         </Link>
+
         <div className="nav-items">
           <Link to="/" className="nav-item">
             <img src={home} alt="Home" />
             <span>Tableau de bord</span>
           </Link>
+
           <div className="nav-item">
             <img src={tune} alt="Simulation" />
             <span>Simulation</span>
           </div>
+
           <div className="nav-item">
             <img src={question} alt="Question" />
           </div>
+
           <div className="menu">
             <img 
               src={menu} 
@@ -57,6 +63,7 @@ function Header() {
               <p>prelead@pretto.fr</p>
               <img src={chevronDown} alt="chevron down" className="chevron-down"/>
             </div>
+            
             {isMenuOpen && (
               <div className="dropdown-menu">
                 <Link 
@@ -69,6 +76,7 @@ function Header() {
               </div>
             )}
           </div>
+
         </div>
       </nav>
     </header>

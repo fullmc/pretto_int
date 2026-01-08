@@ -1,99 +1,3 @@
-.time {
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    "SF Pro Display",
-    system-ui,
-    sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-nav {
-  height: 72px;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  background: white;
-  border-bottom: 1px solid rgba(201, 207, 213);
-  justify-content: space-between;
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .nav-items {
-    display: flex;
-    height: 100%;
-  }
-
-  .nav-item, .profile-info {
-    display: none;
-  }
-  .menu {
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    height: 100%;
-    border-left: 1px solid rgba(201, 207, 213);
-  }
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background: white;
-  border: 1px solid rgba(201, 207, 213, 1);
-  border-radius: 8px;
-  min-width: 200px;
-  z-index: 1000;
-  margin-top: 8px;
-}
-
-.dropdown-item {
-  display: block;
-  padding: 16px 20px;
-  text-decoration: none;
-  color: rgba(5, 5, 5, 1);
-  font-weight: 350;
-  transition: background-color 0.2s;
-}
-
-.dropdown-item:hover {
-  background-color: white;
-}
-
-.dropdown-item:first-child {
-  border-radius: 8px 8px 0 0;
-}
-
-.dropdown-item:last-child {
-  border-radius: 0 0 8px 8px;
-}
-
-.status-bar {
-  height: 44px;
-  padding: 0 15px 0 33px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: white;
-}
-
-.status-icons {
-  display: flex;
-  gap: 8px;
-}
-
 h1{
   font-size: 32px;
   font-weight: 900;
@@ -275,42 +179,6 @@ section {
 }
 
 @media (min-width: 1024px) {
-
-  .status-bar {
-    display: none;
-  }
-
-  nav {
-    .menu-icon {
-      display: none;
-    }
-
-    .nav-items {
-      display: flex;
-      gap: 32px;
-      height: 100%;
-    }
-
-    .nav-item {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      justify-content: center;
-      font-weight: 350;
-    }
-
-    .nav-item:first-child {
-      text-decoration: underline;
-    }
-
-    .profile-info {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 350;
-    }
-  }
-
   section {
     .finance {
       display: flex;
@@ -330,11 +198,6 @@ section {
 }
 
 @media (min-width: 1240px) {
-
-  header {
-    position: relative;
-  }
-
   main {
     padding-top: 40px;
     margin: 0;

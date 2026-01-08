@@ -49,6 +49,7 @@ function CitySelector({ cities, onAddCity, onRemoveCity }: ICitySelector) {
 
   return (
     <div className="city-selector">
+
       <div className="cities-list">
         {cities.map((city, i) => (
           <div key={i} className="city-tag">
@@ -67,6 +68,7 @@ function CitySelector({ cities, onAddCity, onRemoveCity }: ICitySelector) {
 
       {isSearching ? (
         <div className="city-search-wrapper">
+
           <div className="search-input-wrapper">
             <input
               type="text"
@@ -85,7 +87,9 @@ function CitySelector({ cities, onAddCity, onRemoveCity }: ICitySelector) {
               ×
             </button>
           </div>
+
           {isLoading && <div className="loading">Recherche...</div>}
+
           {suggestions.length > 0 && (
             <div className="suggestions-dropdown">
               {suggestions.map((suggestion, i) => (
@@ -99,6 +103,7 @@ function CitySelector({ cities, onAddCity, onRemoveCity }: ICitySelector) {
               ))}
             </div>
           )}
+          
         </div>
       ) : (
         <button
