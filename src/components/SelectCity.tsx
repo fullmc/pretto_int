@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { searchPlaces } from '@pretto/places'
 import type { ICity, ICitySelector } from '../types/city'
+import './SelectCity.css'
 
 function CitySelector({ cities, onAddCity, onRemoveCity }: ICitySelector) {
   const [isSearching, setIsSearching] = useState(false)
@@ -66,14 +67,24 @@ function CitySelector({ cities, onAddCity, onRemoveCity }: ICitySelector) {
 
       {isSearching ? (
         <div className="city-search-wrapper">
-          <input
-            type="text"
-            value={searchValue}
-            onChange={(e) => handleSearchChange(e.target.value)}
-            placeholder="Rechercher une ville..."
-            className="city-search-input"
-            autoFocus
-          />
+          <div className="search-input-wrapper">
+            <input
+              type="text"
+              value={searchValue}
+              onChange={(e) => handleSearchChange(e.target.value)}
+              placeholder="Rechercher une ville..."
+              className="city-search-input"
+              autoFocus
+            />
+            <button
+              type="button"
+              onClick={handleCancel}
+              className="clear-search"
+              aria-label="Effacer"
+            >
+              ×
+            </button>
+          </div>
           {isLoading && <div className="loading">Recherche...</div>}
           {suggestions.length > 0 && (
             <div className="suggestions-dropdown">
@@ -88,13 +99,6 @@ function CitySelector({ cities, onAddCity, onRemoveCity }: ICitySelector) {
               ))}
             </div>
           )}
-          <button
-            type="button"
-            onClick={handleCancel}
-            className="cancel-search"
-          >
-            Annuler
-          </button>
         </div>
       ) : (
         <button
