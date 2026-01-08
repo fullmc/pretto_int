@@ -1,9 +1,26 @@
+import { useState } from "react";
 import Header from "./components/Header";
 import './AlertSettings.css'
 import Checkbox from "./components/Checkbox";
 import Radio from "./components/Radio";
+import CitySelector from "./components/SelectCity";
+import type { ICity } from "./types/city";
 
 function AlertSettings() {
+  const [cities, setCities] = useState<ICity[]>(
+    [
+      { label: 'Lyon', postcode: '69007' }
+    ])
+
+  const handleAddCity = (city: ICity) => {
+    setCities([...cities, city])
+  }
+
+  const handleRemoveCity = (city: ICity) => {
+    setCities(cities.filter((c) => c.postcode !== city.postcode))
+  }
+
+
   return (
     <>
       <Header />
@@ -14,6 +31,11 @@ function AlertSettings() {
           <div className="form-content">
             <div className="form-section">
               <h5>Localisation</h5>
+            <CitySelector
+              cities={cities}
+              onAddCity={handleAddCity}
+              onRemoveCity={handleRemoveCity}
+            />
             </div>
             <div className="form-section">
               <h5>Type de bien</h5>
