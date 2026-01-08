@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import './AlertSettings.css'
 import Checkbox from "./components/Checkbox";
+import Radio from "./components/Radio";
 
 function AlertSettings() {
   return (
@@ -27,6 +28,16 @@ function AlertSettings() {
             </div>
             <div className="form-section">
               <h5>Type de vente</h5>
+              <Radio
+                id="neuf"
+                name="saleType"
+                label="Neuf"
+              />
+              <Radio
+                id="ancien"
+                name="saleType"
+                label="Ancien"
+              />
             </div>
           </div>
           <div className="form-buttons">

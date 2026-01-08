@@ -1,0 +1,10 @@
+.radio-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.radio-wrapper input[type="radio"] {
+  cursor: pointer;
+}
+
