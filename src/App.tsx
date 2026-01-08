@@ -1,62 +1,18 @@
 import './App.css'
-import cellular from './assets/cellular.svg'
-import wifi from './assets/Wifi.svg'
-import battery from './assets/Battery.svg'
-import logo from './assets/Logo_dark.svg'
-import menu from './assets/Bars.svg'
 import calculator from './assets/calculator.svg'
 import coins from './assets/coins.svg'
 import chevron from './assets/ChevronRightBold.svg'
 import hero from './assets/Image1.svg'
 import check from './assets/CheckBoldMini.svg'
 import finance from './assets/paper.svg'
-import home from './assets/House.svg'
-import tune from './assets/Tune.svg'
-import question from './assets/QuestionMarkCircle.svg'
-import profile from './assets/Avatar.svg'
-import chevronDown from './assets/ChevronDownBold.svg'
+import Header from './components/Header.tsx'
 
 
 function App() {
 
   return (
     <>
-      <header>
-        <div className="status-bar">
-          <div className="time">9:41</div>
-          <div className="status-icons">
-            <img src={cellular} alt="Cellular signal" />
-            <img src={wifi} alt="WiFi signal" />
-            <img src={battery} alt="Battery level" />
-          </div>
-        </div>
-
-        <nav>
-          <img src={logo} alt="Pretto Logo" className="logo"/>
-          <div className="nav-items">
-            <div className="nav-item">
-              <img src={home} alt="Home" />
-              <a>Tableau de bord</a>
-            </div>
-            <div className="nav-item">
-              <img src={tune} alt="Home" />
-              <a>Simulation</a>
-            </div>
-            <div className="nav-item">
-              <img src={question} alt="Home" />
-            </div>
-            <div className="menu">
-              <img src={menu} alt="Menu" className="menu-icon" />
-              <div className="profile-info">
-                <img src={profile} alt="Profile"/>
-                <p>prelead@pretto.fr</p>
-                <img src={chevronDown} alt="chevron down" className="chevron-down"/>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
-      
+      <Header />
       <main>
         <section>
           <h1>Préparez votre projet en toute facilité</h1>
