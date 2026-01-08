@@ -1,0 +1,46 @@
+h5 {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+.alert-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-section{
+  border: 1px solid rgba(211, 211, 211);
+  border-radius: 8px;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .save-btn {
+    background-color: rgba(0, 104, 85, 1);
+    border: none;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1)
+  }
+
+  .delete-btn {
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: Roboto, sans-serif, Arial;
+  }
+}
