@@ -20,7 +20,7 @@
 .city-tag {
   display: inline-flex;
   align-items: center;
-  background-color: white;
+  background-color: rgba(241, 235, 226, 1);
   border-radius: 20px;
   padding: 8px 12px 8px 16px;
   font-size: 14px;
