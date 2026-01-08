@@ -1,6 +1,8 @@
 # Test Technique Pretto
 
 Interface web responsive reproduisant le design fourni par Pretto.
+<img width="883" height="605" alt="Screenshot 2026-01-08 at 16 02 52" src="https://github.com/user-attachments/assets/4b909e66-7521-4b47-a4b6-d8599ffb9e5b" />
+<img width="297" height="696" alt="Screenshot 2026-01-08 at 16 03 32" src="https://github.com/user-attachments/assets/6dbc3cb8-8b8f-4e1b-ba66-762a2568f73d" /> <img width="296" height="534" alt="Screenshot 2026-01-08 at 16 04 04" src="https://github.com/user-attachments/assets/68062a51-e781-4796-a0b1-ca1962faa1a5" />
 
 ## Technologies utilisées
 
