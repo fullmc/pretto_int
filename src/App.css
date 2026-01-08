@@ -25,6 +25,11 @@ nav {
   border-bottom: 1px solid rgba(201, 207, 213);
   justify-content: space-between;
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   .nav-items {
     display: flex;
     height: 100%;
@@ -40,6 +45,39 @@ nav {
     height: 100%;
     border-left: 1px solid rgba(201, 207, 213);
   }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid rgba(201, 207, 213, 1);
+  border-radius: 8px;
+  min-width: 200px;
+  z-index: 1000;
+  margin-top: 8px;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: rgba(5, 5, 5, 1);
+  font-weight: 350;
+  transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: white;
+}
+
+.dropdown-item:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.dropdown-item:last-child {
+  border-radius: 0 0 8px 8px;
 }
 
 .status-bar {
